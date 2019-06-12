@@ -1,0 +1,133 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure, section {
+  margin: 0;
+  padding: 0; 
+}
+
+ol, ul {
+	list-style: none;
+	li {
+		margin: 10px 0;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+p {
+	font-size: 12.5px;
+	line-height: 2;		
+}
+
+h1 {
+	font-size: 50px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+h3 {
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 13.5px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	margin-bottom: 10px;
+}
+
+h5 {
+	font-size: 12.5px;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+	margin-bottom: 10px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.resume {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	max-width: 900px;
+	padding: 50px 20px;
+	width: 100%;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	.col1 {
+		width: 65%;
+	}
+}
+
+.about {
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+.experience {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	.col1,
+	.col2 {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.item {
+		margin-bottom: 30px;
+	}
+}
+
+.education {
+	p {
+		margin-bottom: 15px;
+	}
+}
+
+
+@media only screen and (min-width: 900px) {
+	.about {
+		width: 65%;
+	}
+	.experience {
+		flex-direction: row;
+		.col1,
+		.col2 {
+			flex-direction: column;
+			width: 48%;
+		}
+	}	
+}
