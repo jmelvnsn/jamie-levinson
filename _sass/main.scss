@@ -81,10 +81,11 @@ body {
 }
 
 header {
+	border-bottom: 1px solid black;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	.col1 {
 		width: 65%;
 	}
@@ -93,9 +94,6 @@ header {
 .about {
 	margin-bottom: 40px;
 	width: 100%;
-	p {
-		margin-bottom: 10px;
-	}
 }
 
 .experience {
@@ -122,7 +120,7 @@ header {
 
 @media only screen and (min-width: 900px) {
 	.about {
-		width: 65%;
+		width: 50%;
 	}
 	.experience {
 		flex-direction: row;
