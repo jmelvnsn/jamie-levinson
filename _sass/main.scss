@@ -87,7 +87,7 @@ header {
 	justify-content: space-between;
 	margin-bottom: 30px;
 	.col1 {
-		width: 65%;
+		width: 100%;
 	}
 }
 
@@ -119,6 +119,11 @@ header {
 
 
 @media only screen and (min-width: 900px) {
+	header {
+		.col1 {
+			width: 65%;
+		}
+	}
 	.about {
 		width: 50%;
 	}
