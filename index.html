@@ -9,6 +9,9 @@ title: Jamie Levinson - Senior Product Manager CV
 			<h1>Jamie <br/> Levinson</h1>
 			<h2>Senior Product Manager</h2>
 		</div>
+		{% if jekyll.environment == "development" %}
+		   {% include address.html %}
+		{% endif %}
 	</header>
 
 	<section class="about">
@@ -74,8 +77,12 @@ title: Jamie Levinson - Senior Product Manager CV
 	<h3>References</h3>
 
 	<section class="references">
-		<p>
-			<a href="mailto:jamie.adam.levinson@gmail.com">Available upon request</a></p>
+		{% if jekyll.environment == "development" %}
+		   {% include references.html %}
+		{% endif %}
+		{% if jekyll.environment == "production" %}
+		   {% include ref-placeholder.html %}
+		{% endif %}
 	</section>
 
 </div><!--EO Resume-->

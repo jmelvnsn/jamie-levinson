@@ -89,6 +89,10 @@ header {
 	.col1 {
 		width: 100%;
 	}
+	.col2 {
+		font-size: 13px;
+		line-height: 2;
+	}
 }
 
 .about {
@@ -108,6 +112,7 @@ header {
 	}
 	.item {
 		margin-bottom: 30px;
+		position: relative;
 	}
 }
 
@@ -116,7 +121,13 @@ header {
 		margin-bottom: 15px;
 	}
 }
+.references {
+	p {
+		margin-bottom: 15px;
+	}
+}
 
+// DESKTOP STYLES
 
 @media only screen and (min-width: 900px) {
 	header {
@@ -135,4 +146,21 @@ header {
 			width: 48%;
 		}
 	}	
+}
+
+// PRINT STYLES
+
+@media print {
+	.resume {
+		display: block;
+		padding: 0;
+	}
+	.about {
+		width: 65%;
+	}
+}
+
+@page {
+	margin: 2cm;
+  size: A4;
 }
