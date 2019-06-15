@@ -1,3 +1,5 @@
 _site
 .sass-cache
 .jekyll-metadata
+_includes/address.html
+_includes/references.html
