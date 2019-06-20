@@ -158,6 +158,16 @@ header {
 	.about {
 		width: 65%;
 	}
+	.experience {
+		display: block;
+	}
+	.print-page-break {
+		display: block;
+		width: 20px;
+		height: 20px;
+		color: red;
+		break-after: always;		
+	}
 }
 
 @page {
