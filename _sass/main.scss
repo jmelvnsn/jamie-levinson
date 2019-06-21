@@ -78,7 +78,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	margin: auto;
-	max-width: 900px;
+	max-width: 800px;
 	padding: 50px 20px;
 }
 
@@ -137,15 +137,11 @@ header {
 			width: 65%;
 		}
 	}
-	.about {
-		width: 50%;
-	}
 	.experience {
-		flex-direction: row;
+		flex-direction: column;
 		.col1,
 		.col2 {
 			flex-direction: column;
-			width: 48%;
 		}
 	}	
 }
