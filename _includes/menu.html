@@ -1,0 +1,12 @@
+<div class="hero-menu">
+	<ul class="nav">
+	   {% for item in site.data.menu.items %}
+	      <li class="{{ item.class }}">
+	      	<a href="{{ item.url }}" class="{% if item.page_url == page.url %}active{% endif %}">
+	      		{{ item.title }}
+	      	</a>
+	      </li>
+	   {% endfor %}
+	</ul>
+</div>
+

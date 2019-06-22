@@ -129,40 +129,62 @@ header {
 	}
 }
 
-.hero {
+.hero-menu {
 	display: flex;
-	flex-direction: column;
 	height: 100vh;
-	justify-content: center;
-	margin: auto;
-	max-width: 800px;
-	padding: 20px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	text-transform: uppercase;
+	li {
+		font-size: 20px;
+	}
+	z-index: 10000;
 }
 
-.hello {
-	font-weight: 300;
-	text-transform: uppercase;
+.home {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.contact {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+.projects {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.cv {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
 }
 
 .nav {
-	display: flex;
-	flex-direction: row;
-	text-transform: uppercase;
-	li {
-		display: block;
-		margin: 5px;
-	}
 	a {
 		background: white;
-		border: 1px solid black;
 		color: black;
 		font-weight: 700;
 		letter-spacing: 2px;
+		opacity: .2;
 		padding: 10px;
 		width: 100%;
 		&:hover {
 			background: black;
 			color: white;
+		}
+		&.active {
+			background: black;
+			color: white;		
+			opacity: 1;	
 		}
 	}
 }

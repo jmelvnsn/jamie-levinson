@@ -1,0 +1,26 @@
+item_list_title: Navigation
+items:
+
+
+- title: /
+  class: home
+  url: /
+  page_url: /
+
+
+- title: contact
+  class: contact
+  url: contact
+  page_url: /contact.html
+
+
+- title: cv
+  class: cv
+  url: cv
+  page_url: /cv.html
+
+
+- title: projects
+  class: projects
+  url: projects
+  page_url: /projects.html
