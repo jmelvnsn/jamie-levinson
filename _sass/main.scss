@@ -136,7 +136,7 @@ header {
 	justify-content: center;
 	margin: auto;
 	max-width: 800px;
-	width: 100%;
+	padding: 20px;
 }
 
 .hello {
@@ -153,16 +153,16 @@ header {
 		margin: 5px;
 	}
 	a {
-		background: black;
+		background: white;
 		border: 1px solid black;
-		color: white;
+		color: black;
 		font-weight: 700;
 		letter-spacing: 2px;
 		padding: 10px;
 		width: 100%;
 		&:hover {
-			background: white;
-			color: black;
+			background: black;
+			color: white;
 		}
 	}
 }
