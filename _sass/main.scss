@@ -130,7 +130,7 @@ header {
 }
 
 .hero-menu {
-	display: flex;
+	display: none;
 	height: 100vh;
 	position: fixed;
 	top: 0;
@@ -139,9 +139,11 @@ header {
 	bottom: 0;
 	text-transform: uppercase;
 	li {
-		font-size: 20px;
+		display: flex;
+		font-size: 10px;
+		justify-content: center;
+		min-width: 85px;
 	}
-	z-index: 10000;
 }
 
 .home {
@@ -171,21 +173,59 @@ header {
 .nav {
 	a {
 		background: white;
+		border: 1px solid black;	
 		color: black;
+		display: flex;
+		justify-content: center;
 		font-weight: 700;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		opacity: .2;
 		padding: 10px;
 		width: 100%;
 		&:hover {
-			background: black;
-			color: white;
+			opacity: 1;
+			transition: opacity .25s ease-in-out;
 		}
-		&.active {
-			background: black;
-			color: white;		
+		&.active {	
 			opacity: 1;	
 		}
+	}
+}
+
+
+.projects-wrap {
+	max-width: 1100px;
+	margin: 30px auto;
+}
+
+.project-card {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin-bottom: 20px;
+	h3 {
+		letter-spacing: initial;
+	}
+	a {
+		opacity: 1;
+		&:hover {
+			opacity: .9;
+			transition: opacity .25s ease-in-out;
+		}
+	}
+	.project-image {
+		width: 47%;
+		img {
+			display: block;
+			position: relative;
+			width: 100%;
+		}
+	}
+	.project-copy {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50%;
 	}
 }
 
@@ -206,6 +246,12 @@ header {
 	}	
 }
 
+@media only screen and (min-width: 1200px) {
+	.hero-menu {
+		display: flex;
+	}
+}
+
 // PRINT STYLES
 
 @media print {
@@ -222,6 +268,9 @@ header {
 		height: 20px;
 		color: red;
 		break-after: always;		
+	}
+	.hero-menu {
+		display: none;
 	}
 }
 
