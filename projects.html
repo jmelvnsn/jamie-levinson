@@ -4,40 +4,16 @@ title: Jamie Levinson - Projects
 ---
 
 <div class="projects-wrap">
-	<div class="project-card">
-		<a href="https://interactives.theroot.com/root-100-2018/" class="project-image">
-			<img src="/assets/img/root100_frame.png" alt=""/>
-		</a>
-		<div class="project-copy">
-			<h3>The Root 100</h3>
-			<p>The Root 100 is an annual list of the most influential African Americans, ages 25 to 45. "It’s our way of honoring the innovators, the leaders, the public figures and game changers whose work from the past year is breaking down barriers and paving the way for the next generation." - Root Editorial Staff</p>
+	<h1>Interactive Features</h1>
+	{% for project in site.data.project.projects %}
+		<div class="project-card">
+			<a href="{{ project.url }}" class="project-image">
+				<img src="{{ project.image }}" alt=""/>
+			</a>
+			<div class="project-copy">
+				<h3>{{ project.title }}</h3>
+				<p>{{ project.copy }}</p>
+			</div>
 		</div>
-	</div>
-	<div class="project-card">
-		<a href="https://interactives.theonion.com/trumpdocuments/" class="project-image">
-			<img src="/assets/img/trump-docs_frame.png" alt=""/>
-		</a>
-		<div class="project-copy">
-			<h3>The Trump Documents</h3>
-			<p>Proin volutpat eros leo, ut efficitur ante fringilla vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque a porta odio. Ut congue tempus dignissim. In maximus ex et ullamcorper suscipit. In feugiat nunc sit amet tellus fermentum lobortis.</p>
-		</div>
-	</div>
-	<div class="project-card">
-		<a href="https://deadspin.com/is-the-first-pro-surfing-contest-in-a-wave-pool-the-spo-1825848433" class="project-image">
-			<img src="/assets/img/deadspin_frame.png" alt=""/>
-		</a>
-		<div class="project-copy">
-			<h3>Kinja Featured Post</h3>
-			<p>Proin volutpat eros leo, ut efficitur ante fringilla vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque a porta odio. Ut congue tempus dignissim. In maximus ex et ullamcorper suscipit. In feugiat nunc sit amet tellus fermentum lobortis.</p>
-		</div>
-	</div>
-	<div class="project-card">
-		<a href="https://minbal.com/" class="project-image">
-			<img src="/assets/img/minbal_frame.png" alt=""/>
-		</a>
-		<div class="project-copy">
-			<h3>Minbal</h3>
-			<p>Proin volutpat eros leo, ut efficitur ante fringilla vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque a porta odio. Ut congue tempus dignissim. In maximus ex et ullamcorper suscipit. In feugiat nunc sit amet tellus fermentum lobortis.</p>
-		</div>
-	</div>
+	{% endfor %}
 </div>
