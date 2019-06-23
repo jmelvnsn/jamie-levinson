@@ -195,7 +195,7 @@ header {
 
 .projects-wrap {
 	max-width: 1100px;
-	margin: 30px auto;
+	margin: 30px;
 	h1 {
 		border-bottom: 1px solid black;
 		font-size: 40px;
@@ -214,10 +214,27 @@ header {
 	}
 }
 
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
 .project-card {
 	display: flex;
 	justify-content: space-between;
-	flex-direction: row;
+	flex-direction: column;
 	margin-bottom: 40px;
 	a {
 		opacity: 1;
@@ -227,10 +244,10 @@ header {
 		}
 	}
 	.project-image {
-		width: 47%;
+		@include aspect-ratio(16, 9);
+		margin-bottom: 30px;
+		width: 100%;
 		img {
-			display: block;
-			position: relative;
 			width: 100%;
 		}
 	}
@@ -238,7 +255,8 @@ header {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		width: 50%;
+		position: relative;
+		width: 100%;
 	}
 }
 
@@ -256,12 +274,28 @@ header {
 		.col2 {
 			flex-direction: column;
 		}
-	}	
+	}
 }
 
 @media only screen and (min-width: 1200px) {
 	.hero-menu {
 		display: flex;
+	}
+	.projects-wrap {
+		margin: 30px auto;
+	}	
+	.project-card {
+		flex-direction: row;
+		.project-image {
+			margin-bottom: 0;
+			width: 47%;
+			img {
+				width: 100%;
+			}
+		}
+		.project-copy {
+			width: 50%;
+		}
 	}
 }
 

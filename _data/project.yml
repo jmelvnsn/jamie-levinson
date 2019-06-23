@@ -3,24 +3,24 @@ projects:
 
 - title: The Root 100
   url: https://interactives.theroot.com/root-100-2018/
-  image: /assets/img/root100_frame.png
+  image_file: root100_frame.jpg
   client: The Root
-  release_date: 2018
-  copy: The Root 100 is our annual list of the most influential African Americans, ages 25 to 45. It’s our way of honoring the innovators, the leaders, the public figures and game changers whose work from the past year is breaking down barriers and paving the way for the next generation.
+  role: Senior Product Manager
+  copy: The Root 100 is an annual list of the most influential African Americans, ages 25 to 45. It’s an interactive overview of the innovators, leaders, public figures and game changers whose work from the past year is breaking down barriers and paving the way for the next generation.
 
 
 - title: The Trump Documents
   url: https://interactives.theonion.com/trumpdocuments/
-  image: /assets/img/trump-docs_frame.png
+  image_file: trump-docs_frame.jpg
   client: The Onion
-  release_date: 2017
+  role: Senior Engineer and Technical Product Manager
   copy: The Trump Documents, released by the Onion, are the satirical newspaper’s fictional version of the Pentagon Papers. It’s about 700 pages of fake executive order drafts, emails and classified “documents” that, collectively, are the Onion’s first big swing at capturing this particular political moment. - Washington Post
 
 
 - title: Where The Candidates Stand
   url: https://interactives.theonion.com/candidates/
-  image: /assets/img/where_frame.png
+  image_file: where_frame.jpg
   client: The Onion
-  release_date: 2016
+  role: Senior Engineer
   copy: America's Finest News Source compares the 2016 presidential hopefuls on all of the key positions that their advisors and focus group coordinators have decided they hold.
 

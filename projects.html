@@ -8,10 +8,11 @@ title: Jamie Levinson - Projects
 	{% for project in site.data.project.projects %}
 		<div class="project-card">
 			<a href="{{ project.url }}" class="project-image">
-				<img src="{{ project.image }}" alt=""/>
+				<img src="https://jamie-levinson.s3.amazonaws.com/{{ project.image_file }}" alt=""/>
 			</a>
 			<div class="project-copy">
 				<h3>{{ project.title }}</h3>
+				<h5>{{ project.role }}</h5>
 				<p>{{ project.copy }}</p>
 			</div>
 		</div>
