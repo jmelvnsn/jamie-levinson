@@ -156,9 +156,10 @@ header {
 	.print-page-break {
 		display: block;
 		width: 20px;
-		height: 20px;
-		color: red;
 		break-after: always;		
+	}
+	.print-page-break-ext {
+		page-break-after: always;
 	}
 }
 
