@@ -72,101 +72,30 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.resume {
+.full-page {
+	background: black;
 	display: flex;
-	flex-direction: column;
+	align-items: center;
 	justify-content: center;
-	margin: auto;
-	max-width: 800px;
-	padding: 50px 20px;
-}
-
-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-bottom: 30px;
-	.col1 {
-		width: 100%;
-	}
-	.col2 {
-		font-size: 13px;
-		line-height: 2;
-	}
-}
-
-.about {
-	margin-bottom: 40px;
+	height: 100vh;
 	width: 100%;
-}
-
-.experience {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	.col1,
-	.col2 {
+	.inner-container {
 		display: flex;
-		flex-direction: column;
+		max-width: 500px;
+		margin: 40px;
+		position: relative;
+		width: 100%;		
+	}
+	img {
+		display: block;
+		position: relative;
 		width: 100%;
 	}
-	.item {
-		margin-bottom: 30px;
-		position: relative;
-	}
 }
 
-.education {
-	p {
-		margin-bottom: 15px;
-	}
-}
-.references {
-	p {
-		margin-bottom: 15px;
-	}
-}
-
-// DESKTOP STYLES
-
-@media only screen and (min-width: 900px) {
-	header {
-		.col1 {
-			width: 65%;
-		}
-	}
-	.experience {
-		flex-direction: column;
-		.col1,
-		.col2 {
-			flex-direction: column;
-		}
-	}	
-}
-
-// PRINT STYLES
-
-@media print {
-	.resume {
-		display: block;
-		padding: 0;
-	}
-	.experience {
-		display: block;
-	}
-	.print-page-break {
-		display: block;
-		width: 20px;
-		break-after: always;		
-	}
-	.pb-ext {
-		display: block;
-		width: 20px;
-		page-break-after: always;
-	}
-}
-
-@page {
-	margin: 2cm;
-  size: A4;
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 300px;
 }
