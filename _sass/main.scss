@@ -23,12 +23,12 @@ body {
 }
 
 .sidebar {
-		background: blue;
+	background: blue;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	height: 100vh;
+	height: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -39,7 +39,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	height: 100%;
 	width: calc(100% - 15%);
 	background-image: url('https://scontent-ort2-1.cdninstagram.com/v/t51.2885-15/e35/17663484_1847804008817430_3573232728063082496_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com&_nc_cat=106&_nc_ohc=bqpbgHhByj8AX8l5drN&oh=cf5801fb2219c42d9679c66d56fdcd90&oe=5E82009A');
 	background-size: cover;
@@ -58,7 +58,7 @@ body {
 }
 
 input[type=range] {
-		transform: rotate(270deg); 
+	transform: rotate(270deg); 
   -webkit-appearance: none;
   width: 500px;
   margin: 20.3px 0;
