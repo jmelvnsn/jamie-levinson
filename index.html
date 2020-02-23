@@ -2,22 +2,22 @@
 layout: default
 title: Jamie Levinson
 ---
-<div id="overlay">
-	<video id="video" src="https://jamie-levinson.s3.amazonaws.com/target.mp4" type="video/mp4" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-	  Sorry, your browser doesn't support embedded videos.
-	</video>
-	<input type="range" id="rangeVolume" min="0" max="1" step="0.01" value="0">
+<div class="page">
+	<div class="sidebar">
+		<input type="range" id="rangeVolume" min="0" max="1" step=".1" value="0">
+	</div>
+	<div id="stage">
+		<h1>DREAMS</h1>
+	</div>
 </div>
 
 <script>
-	var video = document.getElementById('video');
 	var volumeControl = document.getElementById('rangeVolume');
+	var stage = document.getElementById('stage');
 	function setVolume(e) {
-	    var volume = e.target.value;
-	    video.volume = volume;
-	    if(video.muted) {
-	        video.muted = !video.muted
-	    };
+    var volume = e.target.value;
+		stage.style.opacity = volume;
 	}
 	volumeControl.addEventListener('change', setVolume);
 </script>
+	
